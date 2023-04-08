@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+    <title>Jogo da Velha</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a href="index.html" class="title">SI401 - 2S2022</a>
+        </div>
+        <div>
+            Jogo da Velha
+        </div>
+        <div>
+            <img class="headerImg" src="unicamp.png" alt="">
+        </div>
+    </header>
+
+    <div id="modalBackground">
+        <div id="modal">
+            <div class="menuHeader" id="modalTitle">
+                Insira os nomes dos jogadores
+            </div>
+            <div class="menuBody" id="modalContent">
+                <form action="#" onsubmit="startGame(); return false">
+                    <p>
+                        &times;:
+                        <input type="text" id="inp0" placeholder="Jogador 01" maxlength="10" autofocus required>
+                    </p>
+                    <p>
+                        &Omicron;:
+                        <input type="text" id="inp1" placeholder="Jogador 02" maxlength="10" required>
+                        <button>OK</button>
+                    </p>
+
+                </form>
+            </div>
+            <div class="menuFooter" id="modalFooter"></div>
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="board">
+            <div class="gridItem" id="g0" onclick="addSymbol('g0')"></div>
+            <div class="gridItem" id="g1" onclick="addSymbol('g1')"></div>
+            <div class="gridItem" id="g2" onclick="addSymbol('g2')"></div>
+            <div class="gridItem" id="g3" onclick="addSymbol('g3')"></div>
+            <div class="gridItem" id="g4" onclick="addSymbol('g4')"></div>
+            <div class="gridItem" id="g5" onclick="addSymbol('g5')"></div>
+            <div class="gridItem" id="g6" onclick="addSymbol('g6')"></div>
+            <div class="gridItem" id="g7" onclick="addSymbol('g7')"></div>
+            <div class="gridItem" id="g8" onclick="addSymbol('g8')"></div>
+        </div>
+        <div class="menu">
+            <div class="menuHeader">
+                Jogadores
+            </div>
+            <div class="menuBody">
+                <p id="p0">&gt;</p>
+                <p id="p1">&nbsp;&nbsp;&nbsp;</p>
+            </div>
+            <div class="menuFooter">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Yuri S. Costa
+    </footer>
+
+</body>
+
+</html>
